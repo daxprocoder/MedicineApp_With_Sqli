@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MedicineActivity">
+
+    <!-- Top bar -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/lightgreen"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicine Reminder"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <!-- Add more views if needed -->
+
+    </LinearLayout>
+
+    <!-- RecyclerView to display medicine data -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/medicineRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Circular button with plus sign -->
+    <Button
+        android:id="@+id/addMedicineButton"
+        android:layout_width="91dp"
+        android:layout_height="89dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/circleplus"
+        android:backgroundTint="@color/lightgreen" />
+
+</LinearLayout>

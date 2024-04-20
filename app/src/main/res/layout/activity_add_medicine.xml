@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Medicine Name EditText -->
+    <EditText
+        android:id="@+id/editTextMedicineName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Medicine Name"
+        android:layout_margin="16dp"/>
+
+    <!-- Days selection checkboxes -->
+    <LinearLayout
+        android:id="@+id/checkboxesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextMedicineName"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Add checkboxes for each day -->
+        <CheckBox
+            android:id="@+id/checkboxSunday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/ic_greencircle"
+            android:text="Sun"
+            android:textColor="@android:color/white"
+            android:gravity="center"/>
+
+        <CheckBox
+            android:id="@+id/checkboxMonday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/ic_greencircle"
+            android:text="Mon"
+            android:textColor="@android:color/white"
+            android:gravity="center"/>
+
+        <CheckBox
+            android:id="@+id/checkboxTuesday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/ic_greencircle"
+            android:text="Tue"
+            android:textColor="@android:color/white"
+            android:gravity="center"/>
+
+        <CheckBox
+            android:id="@+id/checkboxWednesday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/ic_greencircle"
+            android:text="Wed"
+            android:textColor="@android:color/white"
+            android:gravity="center"/>
+
+        <CheckBox
+            android:id="@+id/checkboxThrusday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/ic_greencircle"
+            android:text="Thr"
+            android:textColor="@android:color/white"
+            android:gravity="center"/>
+
+        <CheckBox
+            android:id="@+id/checkboxFriday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/ic_greencircle"
+            android:text="Fri"
+            android:textColor="@android:color/white"
+            android:gravity="center"/>
+
+        <CheckBox
+            android:id="@+id/checkboxSaturday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/ic_greencircle"
+            android:text="Sat"
+            android:textColor="@android:color/white"
+            android:gravity="center"/>
+
+
+        <!-- Add checkboxes for other days -->
+        <!-- Repeat the CheckBox element for each day, adjusting the text and ID -->
+    </LinearLayout>
+
+    <!-- Reminder Time Picker -->
+
+    <!-- Add Medicine Button -->
+    <TimePicker
+        android:id="@+id/timePickerReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkboxesLayout"
+        android:layout_marginTop="68dp" />
+
+    <Button
+        android:id="@+id/buttonAddMedicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Medicine"
+        android:layout_below="@id/timePickerReminder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

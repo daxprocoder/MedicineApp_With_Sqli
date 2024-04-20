@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Filled black circle -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M12,2c5.52,0 10,4.48 10,10s-4.48,10 -10,10S2,17.52 2,12 6.48,2 12,2zm0,18c4.41,0 8,-3.59 8,-8s-3.59,-8 -8,-8 -8,3.59 -8,8 3.59,8 8,8z" />
+
+    <!-- Horizontal line of plus sign -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M8,12H16V13H8z" />
+
+    <!-- Vertical line of plus sign -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,8V16H13V8z" />
+
+</vector>
